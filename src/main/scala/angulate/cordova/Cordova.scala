@@ -7,12 +7,12 @@ import scala.scalajs.js.UndefOr
 
 trait Cordova extends js.Object {
 
-  val plugins: Plugins
+  val plugins: Plugins = js.native
 
 }
 
 trait Plugins extends js.Object {
 
-  val Keyboard: UndefOr[Keyboard]
+  val Keyboard: UndefOr[Keyboard] = js.native
 
 }

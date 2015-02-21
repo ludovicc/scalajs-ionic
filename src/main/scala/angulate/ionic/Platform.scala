@@ -7,22 +7,22 @@ trait Platform extends js.Object {
   /**
    * Whether the device is ready
    */
-  val isReady: Boolean
+  val isReady: Boolean = js.native
 
   /**
    * Whether the device is full screen.
    */
-  val isFullScreen: Boolean
+  val isFullScreen: Boolean = js.native
 
   /**
    * An array of all platforms found.
    */
-  val platforms: js.Array[String]
+  val platforms: js.Array[String] = js.native
 
   /**
    * What grade the current platform is.
    */
-  val grade: String
+  val grade: String = js.native
 
   /**
    * Trigger a callback once the device is ready, or immediately if the device is already ready.
@@ -102,18 +102,18 @@ trait Platform extends js.Object {
 trait Device extends js.Object {
 
   /** Get the version of Cordova running on the device. */
-  val cordova: String
+  val cordova: String = js.native
   /**
    * The device.model returns the name of the device's model or product. The value is set
    * by the device manufacturer and may be different across versions of the same product.
    */
-  val model: String
+  val model: String = js.native
   /** device.name is deprecated as of version 2.3.0. Use device.model instead. */
-  val name: String
+  val name: String = js.native
   /** Get the device's operating system name. */
-  val platform: String
+  val platform: String = js.native
   /** Get the device's Universally Unique Identifier (UUID). */
-  val uuid: String
+  val uuid: String = js.native
   /** Get the operating system version. */
-  val version: String
+  val version: String = js.native
 }

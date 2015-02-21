@@ -9,22 +9,22 @@ trait Keyboard extends js.Object {
    *
    * @param hide
    */
-  def hideKeyboardAccessoryBar(hide: Boolean): Unit
+  def hideKeyboardAccessoryBar(hide: Boolean): Unit = js.native
 
   /**
    * Close the keyboard if it is open.
    */
-  def close(): Unit
+  def close(): Unit = js.native
 
   /**
    * Disable native scrolling, useful if you are using JavaScript to scroll
    *
    * @param disable
    */
-  def disableScroll(disable: Boolean): Unit
+  def disableScroll(disable: Boolean): Unit = js.native
 
   /**
    * Whether or not the keyboard is currently visible.
    */
-  def isVisible: Boolean
+  def isVisible: Boolean = js.native
 }
